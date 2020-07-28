@@ -1,0 +1,39 @@
+.titulo {
+    text-align: center;
+    display: block;
+}
+
+.imagen {
+    text-align: center;
+    margin-right: unset;
+} 
+.tituloCarrusel{
+    text-align: center;
+    font-size: 100px;
+}
+.infoCarrusel{
+    color: black;
+}
+.subFashion{
+   display: block;
+   margin: auto;
+}
+.subTitulo{
+    text-align: center;
+    font-style: italic;
+}
+.QVM{
+    text-align: center;
+    font-size: 100px;
+}
+.vM{
+    text-align: center;
+    font-size: 50px;
+}
+.Cataloge{
+    display: block;
+    margin: auto;
+}
+.background{
+    background-color: rgb(185, 181, 174);
+}

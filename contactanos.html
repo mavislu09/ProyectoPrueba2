@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Spoon Compra</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+</style>
+</head>
+<body  class="bg-light">
+     <!--Menú-->
+     <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img height="135" width="247,5"src="img/FashionSpoon.png" alt="Logo" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Fotografías <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+            </li>
+          </ul>
+          <h2 id="labelUsuario"></h2>
+          <button id="registro" type="button" class="btn btn-link">Registrate</button>
+          <button id="login" type="button" class="btn btn-link">Ingresa</button>
+          <button id="salir" type="button" class="btn btn-link">Salir</button>
+          
+        </div>
+      </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Titulo-->
+<div class="container">
+  <div class="py-5 text-center">
+    <h2>Formulario de compras</h2>
+  </div>
+      
+      <!--Formulario-->
+      <div class="row tabla"></div>
+          <form class="needs-validation tabla" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Apellidos</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+    
+            <div class="mb-3">
+              <label for="address">Dirección</label>
+              <input type="text" class="form-control" id="address" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">País</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Seleccionar...</option>
+                  <option>Argentina</option>
+                  <option>Bolivia</option>
+                  <option>Brasil</option>
+                  <option>Chile</option>
+                  <option>Colombia</option>
+                  <option>Costa Rica</option>
+                  <option>Cuba</option>
+                  <option>Ecuador</option>
+                  <option>El Salvador</option>
+                  <option>Guatemala</option>
+                  <option>Haíti</option>
+                  <option>Honduras</option>
+                  <option>México</option>
+                  <option>Nicaragua</option>
+                  <option>Panama</option>
+                  <option>Paraguay</option>
+                  <option>Perú</option>
+                  <option>Republica Dominicana</option>
+                  <option>Uruguay</option>
+                  <option>Venezuela</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Ciudad</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Seleccionar...</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Acepto terminos y condiciones</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Permito que me contacten y envien promociones a mi correo</label>
+            </div>
+            <hr class="mb-4">
+    
+            <h4 class="mb-3">Metodo de pago</h4>
+    
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Tarjeta Credito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Tarjeta Debito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Número de Tarjeta</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Ingrese un número de tarjeta valido
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Comprar</button>
+          </form>
+        </div>
+      </div>
+    <!--Footer-->
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Fashion Spoon</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Terminos</a></li>
+          <li class="list-inline-item"><a href="#">Ayuda</a></li>
+        </ul>
+      </footer>
+    </div>
+</body>
+</html>
